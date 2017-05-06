@@ -1,0 +1,23 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<template>
+    <template is="dom-bind">
+        <h1>Welcome</h1>
+        <h2>Create Main Corporation</h2>
+        <fieldset>
+            <label>Name:</label>
+            <input value="{{model.Name$::input}}">
+        </fieldset>
+        <button value="{{model.SaveTrigger$::click}}" onmousedown="++this.value">create corporation</button>
+        <h3>List of Corporations</h3>
+        <strong>{{model.Name$}}</strong>
+        <h3>Franchise Offices</h3>
+        <template is="dom-repeat" items="{{model.Companies}}">
+            <div>
+                <starcounter-include partial="{{item}}"></starcounter-include>
+            </div>
+        </template>
+        <button value="{{model.AddNewCompanyTrigger$::click}}" onmousedown="++this.value">Add a new Franchise</button>
+        <hr>
+    </template>
+</template>

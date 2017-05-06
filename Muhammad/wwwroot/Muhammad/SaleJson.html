@@ -1,0 +1,49 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<template>
+    <template is="dom-bind">
+        <h3>Home info</h3>
+        <hr>
+        <fieldset>
+            <label>Street:</label>
+            <input value="{{model.Address$.Street$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>Number:</label>
+            <input value="{{model.Address$.Number$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>Zip Code:</label>
+            <input value="{{model.Address$.Zip$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>City:</label>
+            <input value="{{model.Address$.City$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>Country:</label>
+            <input value="{{model.Address$.Country$::input}}">
+        </fieldset>
+        <h3>Transaction info</h3>
+        <hr>
+        <fieldset>
+            <label>Date (Format: '2016-04-01'):</label>
+            <input value="{{model.Transactions$.Date$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>Sales Price:</label>
+            <input value="{{model.Transactions$.SalesPrice$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>Commission:</label>
+            <input value="{{model.Transactions$.Commission$::input}}">
+        </fieldset>
+    </template>
+    
+</template>

@@ -1,0 +1,45 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<template>
+    <template is="dom-bind">
+        <h1>Edit Franchise Settings</h1>
+        <label>Name:</label>
+        <input value="{{model.Name$::input}}">
+        <fieldset>
+            <label>Street:</label>
+            <input value="{{model.Address$.Street$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>Number:</label>
+            <input value="{{model.Address$.Number$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>Zip Code:</label>
+            <input value="{{model.Address$.Zip$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>City:</label>
+            <input value="{{model.Address$.City$::input}}">
+        </fieldset>
+
+        <fieldset>
+            <label>Country:</label>
+            <input value="{{model.Address$.Country$::input}}">
+        </fieldset>
+
+        <hr>
+        <hr>
+        <template is="dom-repeat" items="{{model.Sales$}}">
+            <div>
+                <starcounter-include partial="{{item}}"></starcounter-include>
+            </div>
+            <hr>
+            
+        </template>
+        <button value="{{model.NewSaleTrigger$::click}}" onmousedown="++this.value">Register a new Sale</button>
+        <hr>
+    </template>
+</template>

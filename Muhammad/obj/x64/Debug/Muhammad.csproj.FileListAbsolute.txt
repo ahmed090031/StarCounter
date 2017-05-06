@@ -1,0 +1,5 @@
+c:\users\mahmed16\documents\visual studio 2015\Projects\Muhammad\Muhammad\bin\Debug\Muhammad.exe
+c:\users\mahmed16\documents\visual studio 2015\Projects\Muhammad\Muhammad\bin\Debug\Muhammad.pdb
+c:\users\mahmed16\documents\visual studio 2015\Projects\Muhammad\Muhammad\obj\x64\Debug\Muhammad.csprojResolveAssemblyReference.cache
+c:\users\mahmed16\documents\visual studio 2015\Projects\Muhammad\Muhammad\obj\x64\Debug\Muhammad.exe
+c:\users\mahmed16\documents\visual studio 2015\Projects\Muhammad\Muhammad\obj\x64\Debug\Muhammad.pdb
